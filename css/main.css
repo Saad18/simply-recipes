@@ -386,7 +386,70 @@ Footer
 
 /*
 ====================
+Hero
+====================
+*/
+.hero {
+  height: 40vh;
+  background: url('../assets/main.jpeg') center/cover no-repeat;
+  margin-bottom: 2rem;
+  border-radius: var(--borderRadius);
+  position: relative;
+}
+.hero-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: var(--borderRadius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  text-align: center;
+  color: var(--white);
+}
 
+@media screen {
+  .hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  
+}
+
+/*
+====================
+Recipes
+====================
+*/
+.recipes-container {
+  display: grid;
+  gap: 2rem 1rem;
+  border: 2px solid red;
+}
+.tags-container {
+  border: 2px solid blue;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+.recipes-list {
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+.tags-container h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/*
+====================
 
 ====================
 */
